@@ -30,7 +30,7 @@
                             <div class="relative">
                                 <input type="text" id="title" name="title" value="{{ $category->title }}" class="rounded-md 
                 border-0 py-1.5 pr-7 pl-10 ring-1 ring-inset
-                focus:ring-2 focus:ring-inset dark:focus:ring-sky-500 outline-none text-slate-950 dark:text-zinc-50 bg-zinc-50 dark:bg-slate-800">
+                focus:ring-2 focus:ring-inset outline-none text-slate-950 bg-zinc-50 ring-slate-600">
 
                                 <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 fill-zinc-50">

@@ -31,8 +31,8 @@
                             <label for="category_id" class="block text-sm font-medium leading-6 text-sky-500 mb-2">Categoria</label>
                             <div class="relative">
                                 <select id="category_id" name="category_id" class="rounded-md border-0 py-1.5
-                         pr-2 pl-10 ring-1 ring-inset focus:ring-2 focus:ring-inset dark:focus:ring-sky-500 
-                         outline-none text-slate-950 dark:text-zinc-50 bg-zinc-50 dark:bg-slate-800">
+                         pr-2 pl-10 ring-1 ring-inset focus:ring-2 focus:ring-inset 
+                         outline-none text-slate-950 bg-zinc-50 ring-slate-600">
                                     <option value="-1">Selecione</option>
                                     @foreach($categories as $category)
                                     @if($product->category_id == $category->id)
@@ -56,8 +56,8 @@
                         <label for="name" class="block text-sm font-medium leading-6 text-sky-500 mb-2">Nome</label>
                         <div class="relative">
                             <input type="text" id="name" name="name" value="{{ $product->name }}" class="rounded-md border-0 py-1.5
-                         pr-2 pl-10 ring-1 ring-inset focus:ring-2 focus:ring-inset dark:focus:ring-sky-500 
-                         outline-none text-slate-950 dark:text-zinc-50 bg-zinc-50 dark:bg-slate-800">
+                         pr-2 pl-10 ring-1 ring-inset focus:ring-2 focus:ring-inset 
+                         outline-none text-slate-950 bg-zinc-50 ring-slate-600">
 
                             <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 fill-zinc-50">
@@ -72,8 +72,8 @@
                         <label for="price" class="block text-sm font-medium leading-6 text-sky-500 mb-2">Preço</label>
                         <div class="relative">
                             <input type="number" min="0" step="any" id="price" name="price" value="{{ $product->price }}" class="rounded-md border-0 py-1.5
-                         pr-2 pl-10 ring-1 ring-inset focus:ring-2 focus:ring-inset dark:focus:ring-sky-500 
-                         outline-none text-slate-950 dark:text-zinc-50 bg-zinc-50 dark:bg-slate-800">
+                         pr-2 pl-10 ring-1 ring-inset focus:ring-2 focus:ring-inset 
+                         outline-none text-slate-950 bg-zinc-50 ring-slate-600">
 
                             <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 fill-zinc-50">
@@ -90,8 +90,8 @@
                         <label for="minimum_quantity" class="block text-sm font-medium leading-6 text-sky-500 mb-2">Quant. Mínima p/ compra</label>
                         <div class="relative">
                             <input type="number" min="0" id="minimum_quantity" name="minimum_quantity" value="{{ $product->minimum_quantity }}" class="rounded-md border-0 py-1.5
-                         pr-2 pl-10 ring-1 ring-inset focus:ring-2 focus:ring-inset dark:focus:ring-sky-500 
-                         outline-none text-slate-950 dark:text-zinc-50 bg-zinc-50 dark:bg-slate-800">
+                         pr-2 pl-10 ring-1 ring-inset focus:ring-2 focus:ring-inset 
+                         outline-none text-slate-950 bg-zinc-50 ring-slate-600">
 
                             <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 fill-zinc-50">
@@ -106,8 +106,8 @@
                         <label for="active" class="block text-sm font-medium leading-6 text-sky-500 mb-2">Ativo:</label>
                         <div class="relative">
                             <select id="active" name="active" class="rounded-md border-0 py-1.5
-                         pr-2 pl-10 ring-1 ring-inset focus:ring-2 focus:ring-inset dark:focus:ring-sky-500 
-                         outline-none text-slate-950 dark:text-zinc-50 bg-zinc-50 dark:bg-slate-800">
+                         pr-2 pl-10 ring-1 ring-inset focus:ring-2 focus:ring-inset 
+                         outline-none text-slate-950 bg-zinc-50 ring-slate-600">
                                 <option value="-1">Selecione</option>
                                 @if($product->active)
                                 <option value="0">Não</option>
@@ -130,8 +130,8 @@
                         <label for="featured" class="block text-sm font-medium leading-6 text-sky-500 mb-2">Destaque:</label>
                         <div class="relative">
                             <select id="featured" name="featured" class="rounded-md border-0 py-1.5
-                         pr-2 pl-10 ring-1 ring-inset focus:ring-2 focus:ring-inset dark:focus:ring-sky-500 
-                         outline-none text-slate-950 dark:text-zinc-50 bg-zinc-50 dark:bg-slate-800">
+                         pr-2 pl-10 ring-1 ring-inset focus:ring-2 focus:ring-inset 
+                         outline-none text-slate-950 bg-zinc-50 ring-slate-600">
                                 <option value="-1">Selecione</option>
                                 @if($product->featured)
                                 <option value="0">Não</option>
@@ -156,8 +156,8 @@
                         <label for="description" class="block text-sm font-medium leading-6 text-sky-500 mb-2">Descrição</label>
                         <div class="relative">
                             <textarea id="description" name="description" value="" class="rounded-md border-0 py-1.5
-                         pr-2 pl-10 ring-1 ring-inset focus:ring-2 focus:ring-inset dark:focus:ring-sky-500 
-                         outline-none text-slate-950 dark:text-zinc-50 bg-zinc-50 dark:bg-slate-800">
+                         pr-2 pl-10 ring-1 ring-inset focus:ring-2 focus:ring-inset 
+                         outline-none text-slate-950 bg-zinc-50 ring-slate-600">
                             {{ $product->description }}
                             </textarea>
 
@@ -174,8 +174,8 @@
                         <label for="instructions" class="block text-sm font-medium leading-6 text-sky-500 mb-2">Instruções</label>
                         <div class="relative">
                             <textarea id="instructions" name="instructions" value="" class="rounded-md border-0 py-1.5
-                         pr-2 pl-10 ring-1 ring-inset focus:ring-2 focus:ring-inset dark:focus:ring-sky-500 
-                         outline-none text-slate-950 dark:text-zinc-50 bg-zinc-50 dark:bg-slate-800">
+                         pr-2 pl-10 ring-1 ring-inset focus:ring-2 focus:ring-inset 
+                         outline-none text-slate-950 bg-zinc-50 ring-slate-600">
                             {{ $product->instructions }}
                             </textarea>
 
@@ -194,8 +194,8 @@
                         <label for="link_file" class="block text-sm font-medium leading-6 text-sky-500 mb-2">Link do arquivo</label>
                         <div class="relative">
                             <input type="text" id="link_file" name="link_file" value="{{ $product->link_file }}" class="rounded-md border-0 py-1.5
-                         pr-2 pl-10 ring-1 ring-inset focus:ring-2 focus:ring-inset dark:focus:ring-sky-500 
-                         outline-none text-slate-950 dark:text-zinc-50 bg-zinc-50 dark:bg-slate-800">
+                         pr-2 pl-10 ring-1 ring-inset focus:ring-2 focus:ring-inset 
+                         outline-none text-slate-950 bg-zinc-50 ring-slate-600">
 
                             <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 fill-zinc-50">
@@ -212,8 +212,8 @@
                         </label>
                         <div class="relative">
                             <input type="file" id="url_image" name="url_image" class="rounded-md border-0 py-1.5
-                         pr-2 pl-10 ring-1 ring-inset focus:ring-2 focus:ring-inset dark:focus:ring-sky-500 
-                         outline-none text-slate-950 dark:text-zinc-50 bg-zinc-50 dark:bg-slate-800">
+                         pr-2 pl-10 ring-1 ring-inset focus:ring-2 focus:ring-inset 
+                         outline-none text-slate-950 bg-zinc-50 ring-slate-600">
 
                             <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 fill-zinc-50">
