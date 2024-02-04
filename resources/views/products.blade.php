@@ -2,14 +2,15 @@
 @section('content')
 <div>
     <div class="w-screen flex flex-col items-center justify-center">
-        <a href="{{ route('produtonovo')}}" class="bg-emerald-500 rounded-full p-2 focus:bg-slate-50
-         text-slate-50 flex items-center justify-center border-2 border-emerald-500 
-         focus:text-emerald-500 transition duration-300 ease-in-out mb-2 mt-8 self-start ml-8
-         hover:bg-emerald-600 hover:border-emerald-600 focus:border-emerald-500">
+        <a href="{{ route('produtonovo')}}" class="bg-emerald-500 rounded-md py-2 px-4
+            text-slate-50 flex items-center mt-4 gap-x-2 justify-center
+            focus:outline-emerald-500 focus:outline-2 focus:border-emerald-500 transition duration-300 ease-in-out
+            hover:bg-emerald-600 hover:border-emerald-600 font-semibold">
 
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
                 <path fill-rule="evenodd" d="M12 3.75a.75.75 0 01.75.75v6.75h6.75a.75.75 0 010 1.5h-6.75v6.75a.75.75 0 01-1.5 0v-6.75H4.5a.75.75 0 010-1.5h6.75V4.5a.75.75 0 01.75-.75z" clip-rule="evenodd"></path>
             </svg>
+            Adicionar novo
         </a>
 
         <table class="table-auto text-zinc-50 font-medium mt-8 rounded">
